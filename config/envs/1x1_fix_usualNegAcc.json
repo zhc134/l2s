@@ -1,0 +1,33 @@
+{
+    "setting_dir": "1x1/",
+    "roadnet_file": "roadnet_1_1.json",
+    "flow_file": "flow_1_1.jsonl",
+    "signal_file": "signal_1_1.jsonl",
+    "observed_file": "1x1_fix_usualNegAcc.txt",
+    "target_params": ["usualNegAcc"],
+    "sim_config": {
+        "probs": [1.0],
+        "means": [
+            [2.5]
+        ],
+        "stds": [0],
+        "seed": 1007
+    },
+    "action_space": {
+        "high": [6.0]
+    },
+    "observation_space": {
+        "dim": 1
+    },
+    "params_template" : {
+        "length": 5.0,
+        "width": 2.0,
+        "maxPosAcc": 3.0,
+        "maxNegAcc": 4.5,
+        "usualPosAcc": 2.0,
+        "usualNegAcc": 2.5,
+        "minGap": 2.5,
+        "maxSpeed": 15,
+        "headwayTime": 1.5
+    }
+}

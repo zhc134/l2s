@@ -1,0 +1,16 @@
+{
+    "alg": "iac",
+    "expname": "gs_iac",
+    "model_default_config": "default.json",
+    "env_config": "1x1_two.json",
+    "run_per_config": 3,
+    "seed": 1007,
+    "grid" : {
+        "epochs": [30],
+        "ac_kwargs.pi_separate": [true, false],
+        "ac_kwargs.layers": [[32], [32, 32]],
+        "z_dim": [4, 8],
+        "act_noise": [0, 0.1, 0.3],
+        "gamma": [0.99, 0.95, 0.9]
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "alg": "sddpg",
+    "expname": "gs_sddpg",
+    "model_default_config": "lc.json",
+    "env_config": "1x1_usualNegAcc_1.5_3.5.json",
+    "run_per_config": 3,
+    "seed": 1007,
+    "grid" : {
+        "rb_kwargs.size": [5000, 10000, 20000],
+        "epochs": [50],
+        "start_steps": [2000],
+        "act_noise": [0.3],
+        "max_ep_len,inc_ep": [[600, 0]],
+        "gamma": [0.99],
+        "q_pi_sample_size": [5],
+        "rb_type": ["GDM"]
+    }
+}

@@ -1,0 +1,30 @@
+{
+    "gamma": 0.99,
+    "lr": 0.001,
+    "polyak": 0.995,
+    "batch_size": 32,
+    "start_steps": 2000,
+    "epochs": 30,
+    "steps_per_epoch": 2000,
+    "max_ep_len": 200,
+    "inc_ep": 0,
+    "rb_type": "GDM",
+    "rb_kwargs": {
+        "size": 20000,
+        "rate": 0.3
+    },
+    "q_pi_sample_size": 10,
+    "z_dim": 8,
+    "z_type": "gaussian",
+    "act_noise": 0.1,
+    "test_max_ep_len": 200,
+    "test_without_state": false,
+    "number_of_tests_per_epoch": 3,
+    "ac_type": "mlp",
+    "ac_kwargs": {
+        "pi_separate": true,
+        "pi_sz": true,
+        "use_bias": true,
+        "layers": [32]
+    }
+}

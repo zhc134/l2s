@@ -1,0 +1,26 @@
+{
+    "gamma": 0.99,
+    "lr": 0.001,
+    "polyak": 0.995,
+    "batch_size": 32,
+    "start_steps": 2000,
+    "epochs": 2,
+    "steps_per_epoch": 2000,
+    "max_ep_len": 600,
+    "inc_ep": 0,
+    "rb_type": "GDM",
+    "rb_kwargs": {
+        "size": 10000,
+        "rate": 0.3
+    },
+    "q_pi_sample_size": 1,
+    "z_dim": 4,
+    "act_noise": 0.1,
+    "test_max_ep_len": 600,
+    "number_of_tests_per_epoch": 3,
+    "ac_type": "mlp",
+    "ac_kwargs": {
+        "pi_sz": true,
+        "layers": [20, 20]
+    }
+}

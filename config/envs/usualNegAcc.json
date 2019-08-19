@@ -1,0 +1,28 @@
+{
+    "action_space": {
+        "high": [
+            6.0
+        ]
+    },
+    "flow_file": "flow_1_1.jsonl",
+    "observation_space": {
+        "dim": 8
+    },
+    "params_template": {
+        "headwayTime": 1.5,
+        "length": 5.0,
+        "maxNegAcc": 4.5,
+        "maxPosAcc": 3.0,
+        "maxSpeed": 15,
+        "minGap": 2.5,
+        "usualNegAcc": 2.5,
+        "usualPosAcc": 2.0,
+        "width": 2.0
+    },
+    "roadnet_file": "roadnet_1_1.json",
+    "setting_dir": "data/setting/1x1/",
+    "signal_file": "signal_1_1.jsonl",
+    "target_params": [
+        "usualNegAcc"
+    ]
+}

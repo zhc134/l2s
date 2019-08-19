@@ -1,0 +1,17 @@
+{
+    "alg": "ddpg",
+    "expname": "gs_ddpg",
+    "model_default_config": "default.json",
+    "env_config": "1x1_usualNegAcc_1.5_3.5.json",
+    "run_per_config": 2,
+    "seed": 1007,
+    "grid" : {
+        "rb_kwargs.size": [10000],
+        "epochs": [30],
+        "start_steps": [6000],
+        "act_noise": [0, 0.1],
+        "max_ep_len,inc_ep": [[600, 0]],
+        "ac_kwargs.layers": [[20, 20], [32, 32], [64, 64]],
+        "gamma": [0.99]
+    }
+}

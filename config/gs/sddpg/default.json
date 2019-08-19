@@ -1,0 +1,16 @@
+{
+    "alg": "sddpg",
+    "expname": "gs_sddpg",
+    "model_default_config": "default.json",
+    "env_config": "1x1_two.json",
+    "run_per_config": 3,
+    "seed": 1007,
+    "grid" : {
+        "rb_kwargs.size": [10000],
+        "epochs": [50],
+        "start_steps": [5000],
+        "act_noise": [0.1],
+        "max_ep_len,inc_ep": [[50, 0]],
+        "gamma": [0.99]
+    }
+}

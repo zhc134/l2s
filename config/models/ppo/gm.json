@@ -1,0 +1,15 @@
+{
+    "optimizer": "adam",
+    "lr": 0.001,
+    "epochs": 100,
+    "steps_per_epoch": 2000,
+    "max_ep_len": 200,
+    "train_pi_iters": 300,
+    "target_kl": 0.01,
+    "clip_ratio": 0.3,
+    "reward_window": 5,
+    "ac_type": "gaussian_mixture",
+    "ac_kwargs": {
+        "k": 2
+    }
+}
